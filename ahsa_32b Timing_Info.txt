@@ -1,0 +1,45 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ccla_32b_4x8
+Version: Q-2019.12-SP5
+Date   : Mon Nov 25 22:40:58 2024
+****************************************
+
+Operating Conditions: tt1p05v25c   Library: saed32hvt_tt1p05v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: b[1] (input port)
+  Endpoint: sum[31] (output port clocked by vclk)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ccla_32b_4x8       8000                  saed32hvt_tt1p05v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  b[1] (in)                                0.00       0.00 r
+  U73/Y (NOR2X0_HVT)                       0.07       0.07 f
+  U75/Y (OAI21X1_HVT)                      0.09       0.16 r
+  U82/Y (AOI21X1_HVT)                      0.09       0.25 f
+  U90/Y (OAI21X1_HVT)                      0.09       0.34 r
+  U121/Y (AOI21X1_HVT)                     0.12       0.46 f
+  U152/Y (OAI21X1_HVT)                     0.13       0.59 r
+  U157/Y (XNOR2X1_HVT)                     0.12       0.71 r
+  sum[31] (out)                            0.06       0.77 r
+  data arrival time                                   0.77
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Ultra(TM) in wire load mode
+// Version   : Q-2019.12-SP5
+// Date      : Mon Nov 25 22:42:18 2024
+/////////////////////////////////////////////////////////////
+
